@@ -1,113 +1,84 @@
-/* Styles généraux */
+/* Styles de base pour le corps */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f0f0f0;
 }
 
-/* Header */
+/* Navigation */
 #header {
-    background-color: #333;
-    padding: 20px;
+    background-color: #e1e0e0;
+    padding: 10px 0;
 }
 
 .nav_menu {
-    list-style: none;
     display: flex;
     justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav_list {
     margin: 0 15px;
-    position: relative;
 }
 
 .nav_link {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+    font-size: 1.2em;
 }
 
 .nav_link:hover {
-    color: #ff6347; /* Couleur au survol */
+    color: #ddd;
 }
 
-.circle {
-   
-    background-color: #ff6347;
-    border-radius: 50%;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s;
+/* Styles pour les sections */
+.section_1 {
+    background-color: #734a9f;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-.nav_list:hover .circle {
-    opacity: 1;
-}
-
-/* Sections */
-.main {
+.section2, .section3 {
     padding: 40px 20px;
 }
 
-.section_1, .section2, .section3 {
-    background-color: #fff;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
+h1, h4 {
     color: #333;
-    text-align: center;
 }
 
-.despcrption p, .col p {
+.despcrption p {
+    font-size: 1.1em;
     line-height: 1.6;
 }
 
-/* Contact form */
-.input {
-    display: flex;
-    flex-direction: column;
-}
-
-.nom {
-    margin: 10px 0;
+/* Formulaire de contact */
+.input input,
+.text textarea {
+    width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 textarea {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    resize: vertical; /* Permet de redimensionner verticalement */
-}
-
-.f_butt {
-    text-align: center;
+    height: 100px;
 }
 
 .btn {
-    background-color: #ff6347;
-    color: #fff;
+    background-color: #825bab;
+    color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
     cursor: pointer;
+    border-radius: 4px;
     transition: background-color 0.3s;
 }
 
 .btn:hover {
-    background-color: #e5533d; /* Couleur au survol */
+    background-color: #734a9f;
 }
