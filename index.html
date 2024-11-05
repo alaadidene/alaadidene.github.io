@@ -2,82 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Mon Portfolio</title>
 </head>
 <body>
-    <!----------------hearder------------->
-    <nav id="header">
-        <div class="nav" id="mynav">
-            <ul class="nav_menu">
-                <li class="nav_list">
-                    <a href="#home" class="nav_link"> accueil </a>
-                    <div class="circle"></div>  
-                </li>
-                <li class="nav_list">
-                    <a href="#about" class="nav_link"> à propos </a>
-                    <div class="circle"></div>  
-                </li>
-                <li class="nav_list">
-                    <a href="#contact" class="nav_link">contact </a>
-                    <div class="circle"></div>  
-                </li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Mon Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
-    <!----------------Main------------->
-    <main class="main">
-        <section class="section_1" id="home">
-            <div class="my_name">
-                <span> Bienvenue !</span>
-            </div>
-            <div class="despcrption">
-                <p>
-                    Je suis Diden Alaa, étudiante en deuxième année de développement système informatique (DSI22)
-                    à l’Institut Supérieur des Études Technologiques de Tozeur,
-                    avec une expérience dans la création de sites web réactifs et performants.
-                </p>
-            </div> 
-        </section>
-        <section class="section2" id="about">
-            <div class="top">
-                <h1>à propos de moi</h1>
-            </div>
-            <div class="col">
-                <h4> Introduction </h4>
-                <p>
-                    Je maîtrise plusieurs langages de programmation, notamment HTML, 
-                    CSS, JavaScript, Python et Java. J’ai également de l’expérience 
-                    dans la création de sites web réactifs et performants.
-                </p>
-            </div>
-        </section>
-        <section class="section3" id="contact">
-            <div class="top">
-                <h1>Contacter moi</h1>
-                <span>Vous avez un projet en tête ? Contactez-moi ici. </span>
-            </div>
-            <div class="col">
-                <div class="cont">
-                    <p> Email: aladiden@gmail.com</p>
-                    <p>Tel: +216--------</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="input">
-                    <input type="text" class="nom" placeholder="votre nom">
-                    <input type="text" class="nom" placeholder="votre e-mail">
-                </div>
-                <div class="text">
-                    <textarea placeholder="votre message"></textarea>
-                </div>
-                <div class="f_butt">
-                    <button class="btn">envoyer</button>
-                </div>
-            </div>
+    
 
+    <main class="main">
+        <section class="jumbotron text-center bg-light" id="home">
+            <div class="container">
+                <h1 class="display-4">Bienvenue !</h1>
+                <p class="lead">
+                    Je suis Diden Alaa, étudiante en développement informatique à l’ISETT.
+                </p>
+                <div>
+                    <a href="cv/CV _alaa_diden.pdf" download="CV_Diden_Alaa.pdf" class="btn btn-primary mt-3">Télécharger mon CV</a>
+                    <a href="cv/CV _alaa_diden.pdf" target="_blank" class="btn btn-secondary mt-3">Voir mon CV</a>
+                </div>
+            
+            </div>
         </section>
+        
+        <section id="about" class="container my-5">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="mb-4">À propos de moi</h2>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        Je suis Diden Alaa, étudiante en deuxième année de développement système informatique (DSI22)
+                        à l’Institut Supérieur des Études Technologiques de Tozeur,
+                        avec une expérience dans la création de sites web réactifs et performants.
+                    </p>
+    
+                    <p>
+                        Je maîtrise plusieurs langages de programmation notamment:
+                        <ul><li>HTML</li>
+                        <li>css</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>Java</li><li>Angular</li>
+                        <li>Symfony</li></ul> 
+                         <p>J’ai également de l’expérience 
+                            dans la création de sites web réactifs et performants.</p> 
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="container my-5">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="mb-4">Contactez-moi</h2>
+                    <p>Vous avez un projet en tête ? Contactez-moi ici.</p>
+                </div>
+                <div class="col-md-8 offset-md-2">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" class="form-control" id="name" placeholder="Votre nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Votre email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Votre message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
     </main>
+    <footer class="footer bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2024 Diden Alaa. Tous les droits sont réservés.</p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
